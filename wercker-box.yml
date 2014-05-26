@@ -14,5 +14,5 @@ script: |
   sudo apt-get install -y aptitude
   sudo aptitude update
   sudo aptitude safe-upgrade
-  sudo apt-get install -y ruby1.9.1 ruby1.9.1-dev curl
+  sudo apt-get install -y ruby1.9.1 ruby1.9.1-dev curl build-essential git
   curl -L https://www.opscode.com/chef/install.sh | sudo bash
