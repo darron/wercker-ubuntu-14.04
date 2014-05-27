@@ -14,5 +14,6 @@ script: |
   sudo apt-get install -y aptitude
   sudo aptitude update
   sudo aptitude safe-upgrade
-  sudo apt-get install -y ruby1.9.1 ruby1.9.1-dev curl build-essential git
+  sudo apt-get install -y ruby1.9.1 ruby1.9.1-dev curl build-essential git wget unzip
+  sudo mkdir -p /usr/local/bin/ && cd /usr/local/bin && sudo wget https://dl.bintray.com/mitchellh/packer/0.5.2_linux_amd64.zip && sudo unzip 0.5.2_linux_amd64.zip
   curl -L https://www.opscode.com/chef/install.sh | sudo bash
